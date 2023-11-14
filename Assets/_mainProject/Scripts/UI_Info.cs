@@ -41,19 +41,19 @@ public class UI_Info : MonoBehaviour
 
     public void Crystal()
     {
+        CrystalInterface.startAppear();
         ResistenciaInterface.startDisappear();
         GlobalInterface.startDisappear();
-        CrystalInterface.startAppear();
         TapaInterface.startDisappear();
         CobreInterface.startDisappear();
     }
     
     public void Tapa()
     {
+        TapaInterface.startAppear();
         ResistenciaInterface.startDisappear();
         GlobalInterface.startDisappear();
         CrystalInterface.startDisappear();
-        TapaInterface.startAppear();
         CobreInterface.startDisappear();
        
     }
@@ -79,11 +79,11 @@ public class UI_Info : MonoBehaviour
     
     public void Cobre()
     {
+        CobreInterface.startAppear();
         ResistenciaInterface.startDisappear();
         GlobalInterface.startDisappear();
         CrystalInterface.startDisappear();
         TapaInterface.startDisappear();
-        CobreInterface.startAppear();
     }
     
    
