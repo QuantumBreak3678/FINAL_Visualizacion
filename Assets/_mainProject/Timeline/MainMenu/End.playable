@@ -39,10 +39,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 10.416666666666666
+    m_Start: 8.316666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -2745737848743292890}
-    m_Duration: 33.4548896500835
+    m_Duration: 31.688222983416843
     m_TimeScale: 1
     m_ParentTrack: {fileID: -7955793244272145311}
     m_EaseInDuration: 0
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 8.706427811613928
+    m_Start: 6.55
     m_ClipIn: 0
     m_Asset: {fileID: 3706550429502087213}
     m_Duration: 14.466666666666665
@@ -421,7 +421,7 @@ MonoBehaviour:
     m_Start: 3.188700465920071
     m_ClipIn: 0
     m_Asset: {fileID: -4070716581311962768}
-    m_Duration: 5.5177273456938565
+    m_Duration: 3.361299534079929
     m_TimeScale: 1
     m_ParentTrack: {fileID: -2753819035375193428}
     m_EaseInDuration: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: y2mate.com - laser gun sound effects for Editing (1)
   - m_Version: 1
-    m_Start: 8.706427811613928
+    m_Start: 6.55
     m_ClipIn: 0
     m_Asset: {fileID: -4902089234020721647}
     m_Duration: 22.296
@@ -1044,7 +1044,7 @@ MonoBehaviour:
     m_Start: 1.3166666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 7419865131496482154}
-    m_Duration: 27.083333333333332
+    m_Duration: 7
     m_TimeScale: 1
     m_ParentTrack: {fileID: 1778882431721412224}
     m_EaseInDuration: 0
