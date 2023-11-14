@@ -12,6 +12,8 @@ TagManager:
   - Tea
   - Floor
   - Hand
+  - Cupula
+  - Charged
   layers:
   - Default
   - TransparentFX
