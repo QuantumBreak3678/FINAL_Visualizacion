@@ -5,17 +5,20 @@ using DG.Tweening;
 
 public class UI_Info : MonoBehaviour
 {
-    public GameObject UI_Infographic;
+    public CanvasGroup UI_Infographic;
 
-    public InterfaceAnimManager InterfaceAnimManager; 
+    public InterfaceAnimManager GlobalInterface; 
+    
+    public InterfaceAnimManager CrystalInterface;
+    
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-           
-            InterfaceAnimManager.startAppear();
-            UI_Infographic.SetActive(true);
+
+            UI_Infographic.DOFade(1f, 0f); 
+            GLOBALAppear();
 
         }
     }
@@ -23,12 +26,23 @@ public class UI_Info : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-         
-           
-            InterfaceAnimManager.startDisappear();
             
-          
+            GlobalInterface.startDisappear();
+            
         }
+    }
+
+    public void Crystal()
+    {
+        GlobalInterface.startDisappear();
+        CrystalInterface.startAppear();
+    }
+
+    public void GLOBALAppear()
+    {
+        GlobalInterface.startAppear();
+        CrystalInterface.startDisappear();
+      
     }
    
     
