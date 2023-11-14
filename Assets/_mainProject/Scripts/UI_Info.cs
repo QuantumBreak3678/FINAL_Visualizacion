@@ -29,33 +29,33 @@ public class UI_Info : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            
+
             GlobalInterface.startDisappear();
             CrystalInterface.startDisappear();
             TapaInterface.startDisappear();
             ResistenciaInterface.startDisappear();
             CobreInterface.startDisappear();
-            
+
         }
     }
 
     public void Crystal()
     {
-        CrystalInterface.startAppear();
+        StartCoroutine(CorrutineHide(CrystalInterface));
         ResistenciaInterface.startDisappear();
         GlobalInterface.startDisappear();
         TapaInterface.startDisappear();
         CobreInterface.startDisappear();
     }
-    
+
     public void Tapa()
     {
-        TapaInterface.startAppear();
+        StartCoroutine(CorrutineHide(TapaInterface));
         ResistenciaInterface.startDisappear();
         GlobalInterface.startDisappear();
         CrystalInterface.startDisappear();
         CobreInterface.startDisappear();
-       
+
     }
 
     public void GLOBALAppear()
@@ -65,27 +65,33 @@ public class UI_Info : MonoBehaviour
         TapaInterface.startDisappear();
         ResistenciaInterface.startDisappear();
         CobreInterface.startDisappear();
-      
+
     }
 
     public void Resistencia()
     {
-        ResistenciaInterface.startAppear();
+        StartCoroutine(CorrutineHide(ResistenciaInterface));
         GlobalInterface.startDisappear();
         CrystalInterface.startDisappear();
         TapaInterface.startDisappear();
         CobreInterface.startDisappear();
     }
-    
+
     public void Cobre()
     {
-        CobreInterface.startAppear();
+        StartCoroutine(CorrutineHide(CobreInterface));
         ResistenciaInterface.startDisappear();
         GlobalInterface.startDisappear();
         CrystalInterface.startDisappear();
         TapaInterface.startDisappear();
     }
-    
-   
-    
+
+    IEnumerator CorrutineHide(InterfaceAnimManager InterfaceAnimManagerA)
+    {
+        yield return new WaitForSeconds(1f);
+        InterfaceAnimManagerA.startAppear();
+    }
+
+
+
 }
